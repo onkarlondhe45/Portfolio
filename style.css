@@ -1,59 +1,160 @@
-
-body{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-  }
-.body_section{
-    padding : 3% 5% 1%;
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+.body_section {
+  padding: 3% 5% 1%;
 }
 
-p{
-  font-size: 18px;
+a {
+  text-decoration: none;
 }
 
-  a{
-    text-decoration: none;
-  }
+@font-face {
+  font-family: "Lovely Home";
+  src: local("Lovely Home"), url("Image/LovelyHome-9aBZ.ttf") format("truetype");
+}
 
-  @font-face{
+.brand-name,
+.navbar-light .navbar-brand {
+  /* font-family: "Brush Script MT"; */
+  /* margin-bottom: 3px; */
+  font-family: "Lovely Home";
+  font-size: 50px;
+  font-weight: bold;
+  color: #f31520;
+}
+@media only screen and (max-width: 764px) {
+  .brand-name,
+  .navbar-light .navbar-brand {
     font-family: "Lovely Home";
-    src:local('Lovely Home'), 
-    url("Image/LovelyHome-9aBZ.ttf") format('truetype');
-
+    font-size: 40px;
+    font-weight: bold;
+    color: #4af153;
   }
-
-.brand-name ,.navbar-light .navbar-brand{
-      /* font-family: "Brush Script MT"; */
-      /* margin-bottom: 3px; */
-      font-family: "Lovely Home";
-      font-size: 50px;
-      font-weight: bold;
-      color: #351458;
-  }
-
-
-
-  .headerachor {
-    color: black;
-    margin: 0 7px 0 7px;
-    font-size: 25px;
-  }
-
-  .headerachor:hover {
-    background-color: #f1f1f1;
-  }
-
-  /* Section 1 */
-   .column1{
-       background-image: linear-gradient(#fefcfe,#ffffff);
-       padding : 8px 16px;
-   }
-
-  .section-1{
-    margin-top: 6%;
-    text-align: left;
-    position: relative;
 }
+
+.headerachor {
+  color: black;
+  margin: 0 7px 0 7px;
+  font-size: 25px;
+}
+
+.headerachor:hover {
+  background-color: #f1f1f1;
+}
+
+#contact {
+  padding: 20px 20px 10px;
+}
+
+.first-section {
+  text-align: center;
+}
+
+.Profilepic {
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  border: 10px solid;
+  border-color: #ff9c63;
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.897);
+}
+
+.context {
+  text-align: center;
+  padding-top: 20px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #868e96;
+}
+
+.ico {
+  padding: 0;
+}
+
+.icon {
+  text-decoration: none;
+  list-style: none;
+  margin: 0 7px 0;
+  display: inline;
+}
+
+.github {
+  color: gray;
+}
+.instagram {
+  color: #fb3958;
+}
+.linkedin {
+  color: #0e76a8;
+}
+.google {
+  color: #ea4335;
+}
+
+.github:hover,
+.instagram:hover,
+.google:hover,
+.linkedin:hover {
+  color: black;
+}
+
+.Resume {
+  background-color: #ff6e1b;
+}
+.Resume:hover {
+  color: black;
+  background-color: rgb(15, 245, 8);
+}
+
+.second-section {
+  text-align: center;
+}
+
+.connect {
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: white;
+  background-color: #ff6363;
+  padding: 10px 30px 10px;
+  margin-left: 12%;
+  margin-right: 12%;
+  border-radius: 10px;
+}
+
+.connection {
+  margin-top: 30px;
+  margin-left: 290px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.sayhello {
+  margin-top: 15px;
+  border: 1px solid #6c63ff;
+  border-radius: 10px;
+  padding: 10px 20px 10px;
+}
+
+.sayhello:hover {
+  text-align: none;
+  text-decoration: none;
+  color: white;
+  background-color: #6c63ff;
+}
+
 span.wave {
   animation-name: wave-animation;
   animation-duration: 2.5s;
@@ -63,266 +164,119 @@ span.wave {
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate(  0.0deg) }
-   10% { transform: rotate(-10.0deg) }
-   20% { transform: rotate( 12.0deg) }
-   30% { transform: rotate(-10.0deg) }
-   40% { transform: rotate(  9.0deg) }
-   50% { transform: rotate(  0.0deg) }
-  100% { transform: rotate(  0.0deg) }
-}
-
-.first-image{
-    position: absolute;
-    right:0;
-}
-.boyimage{
-  height: 400px;
-}
-
-@media only screen and (max-width : 1183px){
-  .first-image{
-    right:160px;
+  0% {
+    transform: rotate(0deg);
   }
-
-}
-.boy{
-  width: 100%;
-  height: 100%;
-  animation: bounce 1.2s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-}
-
-@keyframes bounce{
-  from{
-      transform: translate3d(0,0,0);
+  10% {
+    transform: rotate(-10deg);
   }
-  to{
-      transform: translate3d(0,20px,0);
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
-.Image-boy{
-  text-align: center;
-  align-items: center;
-}
-
-@media only screen and (min-width:951px){
-  .Image-boy{
-    display:none;
-  }
-}
-  .Hello{
-      margin-bottom: 20px;
-  }
-  p{
-      line-height: 2;
-      color: #868e96;
-  }
-
-
-  .btn {
-    display: inline-block;
-    width: 4.37rem;
-    height: 4.37rem;
-    background: #e9e9e9;
-    padding: 0px 0px;
-    margin: 10px;
-    border-radius: 30%;
-    box-shadow: 0 5px 15px -5px #00000070;
-    color: #3498db;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .btn i {
-    line-height: 70px;
-    font-size: 1.625rem;
-    transition: 0.2s linear;
-  }
-
-  .btn:hover i {
-    transform: scale(1.3);
-    color: #f1f1f1;
-  }
-
-  .btn::before {
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    background: #3498db;
-    transform: rotate(45deg);
-    left: -110%;
-    top: 90%;
-  }
-
-
-
-
-  .btn:hover::before {
-    animation: aaa 0.7s 1;
-    top: -10%;
-    left: -10%;
-  }
-
-  @media only screen and (max-width:470px){
-    .btn{
-      width: 2.5rem;
-      height: 2.5rem;
-      margin: 7px;
-    }
-    .btn i {
-      line-height: 40px;
-      font-size: 1em;
-    }
-  }
-
- #Whatido{
-     text-align: center;
-     padding-top: 7%;
- }
-
-  /* Section 2 */
-  .feature-1{
-      padding-top: 5%;
-      text-align: center;
-      }
-  .feature-2{
-    padding-top: 5%;
+@media only screen and (max-width: 950px) {
+  body,
+  html {
     text-align: center;
+    font-size: 16px;
+    line-height: normal;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .connect {
+    font-size: 20px;
+  }
+  .connection {
+    margin-left: 0px;
+  }
 }
-  .feature-3{
-  padding-top: 5%;
-  padding-bottom: 20px;
-  text-align: center;
-  }
 
-  .Feature-Heading{
-      font-family: "Montserrat";
-      font-weight: 300;
-  }
-
-  .Feature-first-image{
-      padding : 0 2% 10%;
-  }
-
-  .Feature-second-image{
-      padding : 5% 2% 0;
-  }
-
-
-
-
-
-  .Feature-svg-image{
-      width: 100%;
-      height:100%;
-  }
-  .Feature-svg-image-3{
-    width: 84%;
-    height: 84%;
-  }
-
-
-
-
-  .dev-icon{
-      list-style: none;
-      display: inline;
-      padding: 0%;
-  }
-
-
-  .numpy{
-    max-width: 100%;
-    width : 30%;
-    height: 30%;
-    padding-bottom: 7%;
-  }
-
-  .pandas{
-    max-width: 100%;
-    max-height: 100%;
-    width : 23%;
-    height: 15%;
-    padding-bottom: 7%;
-    padding-left :0;
-  }
-
-  li{
-    display: inline;
-  }
-
-  .Data-Analytic{
-      text-align: left;
-  }
-
-  .Features-paragraph{
-      margin-top : 8px;
-      margin-bottom: 8px;
-  }
-
-  @media only screen and (max-width : 764px){
-    .feature-2{
-      display: flex;
-      flex-direction: column;
-    }
-    .feature-web{
-      order:2;
-    }
-      
-      .brand-name ,.navbar-light .navbar-brand{
-      /* font-family: "Brush Script MT"; */
-      /* margin-bottom: 3px; */
-      font-family: "Lovely Home";
-      font-size: 40px;
-      font-weight: bold;
-      color: #351458;
-  }
-  }
-  @media only screen and (max-width : 991px) and (min-width: 951px){
-    .section-1{
-      margin-top: auto;
-      padding-right: 400px;
-    }
-  }
-  @media only screen and (max-width : 950px){
-
-    body,html{
-      text-align: center;
-      font-size: 16px;
-      line-height: normal;
-    }
-    .Hello{
-      margin-bottom: 10px;
-    }
-    h1{
-      font-size: 25px;
-    }
-    p{
-      font-size: 15px;
-      line-height: normal;
-    }
-      .section-1{
-          text-align: center;
-      }
-      .first-image{
-          display: none;
-      }
-
-      .pandas{
-        width: 23%;
-        height: 15%;
-      }
-  }
-
-
-
-
-footer{
+footer {
   padding-top: 2%;
   color: #868e96;
   text-align: center;
+}
+
+.hr {
+  border: none;
+  height: 4px;
+  width: 60%;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  position: relative;
+  margin: 20px auto;
+}
+
+.hr::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #ff7e5f;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -4px;
+  border-radius: 50%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 25px; /* Spacing between icons */
+  justify-content: center; /* Centering icons */
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 50px; /* Increase icon size */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fab.fa-whatsapp {
+  font-size: 24px; /* Adjust icon size */
+  color: #25d366; /* WhatsApp green color */
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fab.fa-whatsapp:hover {
+  color: #128c7e; /* Darker green on hover */
+  transform: scale(1.2); /* Slight zoom effect */
+}
+
+.fab.fa-instagram {
+  color: #e4405f; /* Instagram's official color */
+}
+
+.fas.fa-paper-plane {
+  color: #d44638; /* Red color for mail icon */
+}
+
+marquee {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(to right, #d67ce2, #feb47b);
+  padding: 10px;
+  border-radius: 5px;
 }
