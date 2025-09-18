@@ -54,9 +54,6 @@ a {
 }
 
 /* Profile Section */
-#profile {
-  padding: 50px 20px;
-}
 .Profilepic {
   width: 250px;
   height: 250px;
@@ -266,6 +263,7 @@ marquee {
   }
   .connect {
     font-size: 20px;
+    margin-top: 10px;
   }
   .sayhello {
     font-size: 16px;
