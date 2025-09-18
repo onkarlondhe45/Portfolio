@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,192 +25,299 @@
   </head>
   <body class="container-fluid body_section">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link headerachor" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link headerachor" href="#services">Our Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link headerachor" href="#contact">Contact Info</a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="logo-container">
+          <span class="logo-text lang en">डॉ. बाळासाहेब पाटेकर</span>
+          <span class="logo-text lang mr" style="display: none"
+            >Dr. Balasaheb Patekar</span
+          >
         </div>
-      </nav>
-    </header>
 
-    <section id="welcome-section" class="text-center my-5">
-      <h1>
+        <!-- Hamburger Button -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="#about" class="lang en">माझ्याबद्दल</a>
+            <a href="#about" class="lang mr" style="display: none">About Me</a>
+          </li>
+          <li>
+            <a href="#services" class="lang en">आमच्या सेवा</a>
+            <a href="#services" class="lang mr" style="display: none"
+              >Our Services</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="lang en">संपर्क माहिती</a>
+            <a href="#contact" class="lang mr" style="display: none"
+              >Contact Info</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Language Toggle Switch -->
+    <div class="language-switch toggle-right">
+      <label class="switch">
+        <input type="checkbox" id="langToggle" />
+        <span class="slider round"></span>
+      </label>
+      <span id="langLabel">मराठी</span>
+    </div>
+
+    <!-- Welcome Section -->
+    <section id="welcome-section" class="text-center">
+      <h1 class="lang mr">
         Welcome to Dr. Patekar’s Veterinary Portfolio
-        <img src="https://m.media-amazon.com/images/I/51cHzw3CHJL._AC_UF894,1000_QL80_.jpg" alt="Vet Icon" width="50">
-    </h1>
-    
-      <p>
+        <img
+          src="https://m.media-amazon.com/images/I/51cHzw3CHJL._AC_UF894,1000_QL80_.jpg"
+          alt="Vet Icon"
+          width="50"
+        />
+      </h1>
+      <h1 class="lang en" style="display: none">
+        डॉ. पाटेकर यांच्या Veterinary Portfolio मध्ये आपले स्वागत आहे
+        <img
+          src="https://m.media-amazon.com/images/I/51cHzw3CHJL._AC_UF894,1000_QL80_.jpg"
+          alt="Vet Icon"
+          width="50"
+        />
+      </h1>
+
+      <p class="lang mr">
         A place where every animal is treated with love, care, and expertise.
         Committed to ensuring happy and healthy lives for your beloved
         companions.
       </p>
+      <p class="lang en" style="display: none">
+        प्रत्येक प्राणी प्रेम, काळजी आणि कौशल्याने उपचारित केला जातो. आपल्या
+        पाळीव प्राण्यांसाठी आनंदी आणि निरोगी जीवन सुनिश्चित करण्यासाठी कटिबद्ध.
+      </p>
     </section>
 
-    <div>
-      <hr class="hr" />
-    </div>
+    <hr class="hr" />
 
+    <!-- Profile Section -->
     <section id="profile">
       <div class="row first-section">
-        <div class="col-lg-6 col-md-6">
+        <div class="col-lg-6 col-md-6 col-12 text-center mb-4">
           <img
             class="Profilepic"
-            src="Image\Photo.jpeg"
+            src="Image/Photo.jpeg"
             alt="Dr. Balasaheb Photo"
           />
         </div>
 
-        <div id="contact" class="col-lg-6 col-md-6 context">
+        <div id="contact" class="col-lg-6 col-md-6 col-12 context">
           <a href="#">
-            <span style="font-size: 40px">Dr. Balasaheb Patekar</span>
+            <span style="font-size: 40px" class="lang mr"
+              >Dr. Balasaheb Patekar</span
+            >
+            <span style="font-size: 40px" class="lang en" style="display: none"
+              >डॉ. बाळासाहेब पाटेकर</span
+            >
           </a>
-          <h1>Compassionate Care for All Animals</h1>
-          <p>Get in touch for expert veterinary services and advice.</p>
-          <div class="mobile-container">
-            <i class="fas fa-mobile-alt"></i>
-            <span>9890022539</span>
-        </div>
-          <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <h1 class="lang mr">Compassionate Care for All Animals</h1>
+          <h1 class="lang en" style="display: none">
+            सर्व प्राण्यांसाठी काळजीपूर्वक उपचार
+          </h1>
+          <p class="lang mr">
+            Get in touch for expert veterinary services and advice.
+          </p>
+          <p class="lang en" style="display: none">
+            तज्ज्ञ पशुवैद्यकीय सेवा आणि सल्ल्यासाठी संपर्क करा.
+          </p>
+
+          <div class="contact-icons">
+            <a href="tel:+919890022539" class="phone" title="Call">
+              <i class="fas fa-phone-alt" aria-hidden="true"></i
+              ><span class="sr-only">Call</span>
+            </a>
             <a
-              href="https://www.instagram.com/dr.aniket_patekar/?hl=en"
+              href="https://wa.me/919890022539"
+              class="whats"
               target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="mailto:patekarbalu2000@gmail.com" target="_blank">
-              <i class="fas fa-envelope" style="color: #2082f3"></i>
+              rel="noopener"
+              title="WhatsApp"
+            >
+              <i class="fab fa-whatsapp" aria-hidden="true"></i
+              ><span class="sr-only">WhatsApp</span>
+            </a>
+            <a
+              href="https://www.instagram.com/dr.aniket_patekar"
+              class="insta"
+              target="_blank"
+              rel="noopener"
+              title="Instagram"
+            >
+              <i class="fab fa-instagram" aria-hidden="true"></i
+              ><span class="sr-only">Instagram</span>
+            </a>
+            <a
+              href="mailto:patekarbalu2000@gmail.com"
+              class="email"
+              title="Email"
+            >
+              <i class="fas fa-envelope" aria-hidden="true"></i
+              ><span class="sr-only">Email</span>
             </a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Second Section -->
     <section>
       <div class="second-section">
-        <h1 class="connect">Providing Care, One Paw at a Time</h1>
+        <h1 class="connect lang mr">Providing Care, One Paw at a Time</h1>
+        <h1 class="connect lang en" style="display: none">
+          प्रत्येक प्राण्याला काळजी देत, प्रत्येक पावलावर साथ
+        </h1>
 
         <a
           class="sayhello"
           href="https://api.whatsapp.com/send?phone=+919890022539&text=Hello Doctor"
         >
-          <i class="fab fa-whatsapp"> </i> Book an Appointment
-          <span class="wave">🐾</span></a
-        >
-        <div class="col-lg-6 connect-image">
+          <i class="fab fa-whatsapp"> </i>
+          <span class="lang mr">Book an Appointment</span>
+          <span class="lang en" style="display: none">अपॉइंटमेंट बुक करा</span>
+          <span class="wave">🐾</span>
+        </a>
+
+        <div class="col-lg-6 d-flex justify-content-center connect-image">
           <img
             class="connection"
-            src="Image\vet_care.jpg"
+            src="Image/vet_care.jpg"
             alt="Veterinary Care"
           />
         </div>
       </div>
     </section>
 
-    <div>
-      <hr class="hr" />
-    </div>
+    <hr class="hr" />
 
+    <!-- Services Section -->
     <section id="services" class="my-5">
-      <h1 class="text-center">Our Services</h1>
+      <h1 class="text-center lang mr">Our Services</h1>
+      <h1 class="text-center lang en" style="display: none">आमच्या सेवा</h1>
 
-      <h3 class="text-center mt-4">Pet & Companion Animal Services</h3>
+      <h3 class="text-center mt-4 lang mr">Pet & Companion Animal Services</h3>
+      <h3 class="text-center mt-4 lang en" style="display: none">
+        पालतू प्राणी आणि सहकारी प्राणी सेवा
+      </h3>
+
       <div class="row text-center">
         <div class="col-md-4">
           <div class="card p-3">
-            <h4>Comprehensive Animal Consultation</h4>
-            <p>Expert advice and checkups for all pets and animals.</p>
+            <h4 class="lang mr">Comprehensive Animal Consultation</h4>
+            <h4 class="lang en" style="display: none">संपूर्ण पशू सल्ला</h4>
+            <p class="lang mr">
+              Expert advice and checkups for all pets and animals.
+            </p>
+            <p class="lang en" style="display: none">
+              सर्व पाळीव प्राणी आणि प्राण्यांसाठी तज्ज्ञ सल्ला आणि तपासणी.
+            </p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card p-3">
-            <h4>Vaccination & Preventive Care</h4>
-            <p>
+            <h4 class="lang mr">Vaccination & Preventive Care</h4>
+            <h4 class="lang en" style="display: none">
+              लस आणि प्रतिबंधक काळजी
+            </h4>
+            <p class="lang mr">
               Ensure your pets and farm animals are protected with timely
               vaccinations.
             </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card p-3">
-            <h4>Emergency & Critical Care</h4>
-            <p>24/7 emergency services for pets, farm animals, and wildlife.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row text-center mt-4">
-        <div class="col-md-4">
-          <div class="card p-3">
-            <h4>Surgery & Advanced Treatment</h4>
-            <p>Specialized surgical procedures for pets and livestock.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card p-3">
-            <h4>Animal Nutrition & Wellness</h4>
-            <p>Custom diet plans and nutritional advice for better health.</p>
-          </div>
-        </div>
-      </div>
-
-      <h3 class="text-center mt-5">Livestock & Farm Animal Services</h3>
-      <div class="row text-center mt-4">
-        <div class="col-md-4">
-          <div class="card p-3">
-            <h4>Livestock Health Management</h4>
-            <p>
-              Comprehensive health plans for farm animals to boost productivity.
+            <p class="lang en" style="display: none">
+              आपले पाळीव प्राणी आणि शेती प्राणी वेळेवर लस घेऊन सुरक्षित आहेत
+              याची खात्री करा.
             </p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card p-3">
-            <h4>Deworming & Parasite Control</h4>
-            <p>
+            <h4 class="lang mr">Emergency & Critical Care</h4>
+            <h4 class="lang en" style="display: none">
+              आपत्कालीन आणि गंभीर काळजी
+            </h4>
+            <p class="lang mr">
+              24/7 emergency services for pets, farm animals, and wildlife.
+            </p>
+            <p class="lang en" style="display: none">
+              पालतू प्राणी, शेती प्राणी आणि वन्यजीवांसाठी 24/7 आपत्कालीन सेवा.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-center mt-5 lang mr">Livestock & Farm Animal Services</h3>
+      <h3 class="text-center mt-5 lang en" style="display: none">
+        पालतू व शेती प्राणी सेवा
+      </h3>
+
+      <div class="row text-center mt-4">
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h4 class="lang mr">Livestock Health Management</h4>
+            <h4 class="lang en" style="display: none">
+              शेती प्राणी आरोग्य व्यवस्थापन
+            </h4>
+            <p class="lang mr">
+              Comprehensive health plans for farm animals to boost productivity.
+            </p>
+            <p class="lang en" style="display: none">
+              शेती प्राण्यांसाठी उत्पादन वाढविण्यासाठी संपूर्ण आरोग्य योजना.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h4 class="lang mr">Deworming & Parasite Control</h4>
+            <h4 class="lang en" style="display: none">
+              कीटक व परजीवी नियंत्रण
+            </h4>
+            <p class="lang mr">
               Protection against worms and parasites for cattle, poultry, and
               more.
             </p>
+            <p class="lang en" style="display: none">
+              गायी, कोंबडी आणि इतरांसाठी कीटक आणि परजीवींपासून संरक्षण.
+            </p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card p-3">
-            <h4>Reproductive Health & Artificial Insemination</h4>
-            <p>
+            <h4 class="lang mr">
+              Reproductive Health & Artificial Insemination
+            </h4>
+            <h4 class="lang en" style="display: none">
+              प्रजनन आरोग्य आणि कृत्रिम गर्भाधान
+            </h4>
+            <p class="lang mr">
               Expert reproductive health management for better breeding
               outcomes.
+            </p>
+            <p class="lang en" style="display: none">
+              चांगल्या प्रजनन परिणामांसाठी तज्ज्ञ प्रजनन आरोग्य व्यवस्थापन.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <div>
-      <hr class="hr" />
-    </div>
+    <hr class="hr" />
 
+    <!-- About Section -->
     <section id="about" class="text-center my-5">
-      <h1>About Me</h1>
-      <p>
+      <h1 class="lang mr">About Me</h1>
+      <h1 class="lang en" style="display: none">माझ्याबद्दल</h1>
+      <p class="lang mr">
         I am Dr. Balasaheb Patekar, a dedicated veterinary professional with a
         passion for animal care. My journey began with completing my 10th
         standard, followed by 11th and 12th in Science. I pursued a Diploma in
@@ -220,14 +327,62 @@
         conditions. My mission is to provide compassionate care and the best
         treatment for pets and livestock.
       </p>
+      <p class="lang en" style="display: none">
+        मी डॉ. बाळासाहेब पाटेकर आहे, एक समर्पित पशुवैद्यकीय व्यावसायिक ज्यांना
+        प्राणी काळजी घेण्याची आवड आहे. माझा प्रवास 10 वी पास करून, 11 वी आणि 12
+        वी विज्ञान शाखेत पूर्ण करून सुरू झाला. मी फार्मसीमध्ये डिप्लोमा केला आणि
+        नंतर 2 वर्षांचा पशुवैद्यकीय डिप्लोमा केला. या क्षेत्रात 1.5 वर्षांचा
+        अनुभव असून, मला विविध प्राणी आरोग्य परिस्थितींचे निदान आणि उपचार
+        करण्याचा अनुभव आहे. माझे ध्येय पाळीव प्राणी आणि शेती प्राण्यांसाठी
+        काळजीपूर्वक आणि उत्तम उपचार देणे आहे.
+      </p>
     </section>
 
-    <div>
-      <marquee>Thank you for visiting the Portfolio</marquee>
-    </div>
+    <marquee>Thank you for visiting the Portfolio</marquee>
 
-    <footer class="footer bg-light text-center py-3">
-      <i>⭐Designed & Developed💻 by Onkar Londhe</i>
+    <footer class="footer text-center">
+      <i>
+        ⭐Designed & Developed💻 by
+        <a
+          href="https://www.instagram.com/onkarlondhe_45"
+          target="_blank"
+          style="color: inherit; text-decoration: underline"
+          >Onkar Londhe</a
+        >
+      </i>
     </footer>
+    <script>
+      // Hamburger toggle
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+
+      // Language toggle function
+      function setLanguage(lang) {
+        document.querySelectorAll(".lang").forEach((el) => {
+          el.style.display = el.classList.contains(lang) ? "" : "none";
+        });
+      }
+
+      const langToggle = document.getElementById("langToggle");
+      const langLabel = document.getElementById("langLabel");
+
+      // Initialize default language to Marathi
+      setLanguage("en");
+      langLabel.textContent = "मराठी"; // show English as the next selectable language
+
+      // Toggle event
+      langToggle.addEventListener("change", () => {
+        if (langToggle.checked) {
+          setLanguage("mr");
+          langLabel.textContent = "English"; // next selectable language is English
+        } else {
+          setLanguage("en");
+          langLabel.textContent = "मराठी"; // next selectable language is Marathi
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,361 +1,616 @@
-body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+/* Reset */
+* {
+  box-sizing: border-box;
   margin: 0;
-}
-.body_section {
-  padding: 3% 5% 1%;
-}
-
-a {
-  text-decoration: none;
-}
-
-@font-face {
-  font-family: "Lovely Home";
-  src: local("Lovely Home"), url("Image/LovelyHome-9aBZ.ttf") format("truetype");
-}
-
-.brand-name,
-.navbar-light .navbar-brand {
-  /* font-family: "Brush Script MT"; */
-  /* margin-bottom: 3px; */
-  font-family: "Lovely Home";
-  font-size: 50px;
-  font-weight: bold;
-  color: #f31520;
-}
-@media only screen and (max-width: 764px) {
-  .brand-name,
-  .navbar-light .navbar-brand {
-    font-family: "Lovely Home";
-    font-size: 40px;
-    font-weight: bold;
-    color: #4af153;
-  }
-}
-
-.headerachor {
-  color: black;
-  margin: 0 7px 0 7px;
-  font-size: 25px;
-}
-
-.headerachor:hover {
-  background-color: #f1f1f1;
-}
-
-#contact {
-  padding: 20px 20px 10px;
-}
-
-.first-section {
-  text-align: center;
-}
-
-.Profilepic {
-  border-radius: 100%;
-  width: 300px;
-  height: 300px;
-  border: 10px solid;
-  border-color: #ff9c63;
-  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.897);
-}
-
-.context {
-  text-align: center;
-  padding-top: 20px;
-}
-
-h1 {
-  font-weight: bold;
-}
-
-p {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #868e96;
-}
-
-.ico {
   padding: 0;
 }
-
-.icon {
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
+a {
   text-decoration: none;
-  list-style: none;
-  margin: 0 7px 0;
-  display: inline;
+  color: inherit;
 }
 
-.github {
-  color: gray;
-}
-.instagram {
-  color: #fb3958;
-}
-.linkedin {
-  color: #0e76a8;
-}
-.google {
-  color: #ea4335;
+/* Container */
+.body_section {
+  padding: 2rem 1rem;
 }
 
-.github:hover,
-.instagram:hover,
-.google:hover,
-.linkedin:hover {
-  color: black;
+/* Navbar */
+.navbar {
+  background-color: #007bff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.navbar-nav .nav-link {
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #007bff;
 }
 
-.Resume {
-  background-color: #ff6e1b;
+/* Welcome Section */
+#welcome-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
 }
-.Resume:hover {
-  color: black;
-  background-color: rgb(15, 245, 8);
+#welcome-section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+#welcome-section img {
+  margin-left: 10px;
+  vertical-align: middle;
 }
 
+/* Profile Section */
+#profile {
+  padding: 50px 20px;
+}
+.Profilepic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 6px solid #007bff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+.context {
+  text-align: center;
+}
+.context span {
+  font-size: 28px;
+  color: #007bff;
+}
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.social-icons a {
+  font-size: 30px;
+  transition: transform 0.3s;
+}
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Mobile */
+.mobile-container {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px auto;
+  padding: 10px;
+  background: #f1f1f1;
+  display: inline-block;
+  border-radius: 6px;
+}
+.mobile-container i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+/* Services */
+#services {
+  background-color: #c4eec0;
+}
+#services h1, #services h3 {
+  font-weight: bold;
+  text-align: center;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 15px 0;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  background: #007bff;
+  color: white;
+  transform: translateY(-5px);
+}
+.card h4 {
+  color: #007bff;
+}
+.card:hover h4 {
+  color: white;
+}
+.card p {
+  font-size: 16px;
+  color: #555;
+}
+.card:hover p {
+  color: #f1f1f1;
+}
+
+/* About */
+#about {
+  text-align: center;
+}
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/* Second Section */
 .second-section {
   text-align: center;
 }
-
 .connect {
-  font-weight: normal;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 24px;
+  background: #ff6b6b;
   color: white;
-  background-color: #ff6363;
-  padding: 10px 30px 10px;
-  margin-left: 12%;
-  margin-right: 12%;
+  padding: 15px 30px;
   border-radius: 10px;
+}
+.sayhello {
+  display: inline-block;
+  margin-top: 15px;
+  background: #25d366;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background 0.3s;
 }
 
 .connection {
+  max-width: 100%;
   margin-top: 30px;
-  margin-left: 290px;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10px;
+  border-radius: 12px;
 }
 
-.sayhello {
-  margin-top: 15px;
-  border: 1px solid #6c63ff;
+/* Divider */
+.hr {
+  height: 4px;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  border: none;
   border-radius: 10px;
-  padding: 10px 20px 10px;
+  width: 70%;
+  margin: 40px auto;
 }
 
-.sayhello:hover {
-  text-align: none;
-  text-decoration: none;
+/* Marquee Replacement */
+marquee {
+  display: block;
+  background: #007bff;
   color: white;
-  background-color: #6c63ff;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 20px;
+  text-align: center;
 }
 
-span.wave {
-  animation-name: wave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
+/* Profile Picture */
+.Profilepic {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+  border: 6px solid #007bff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
 }
 
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(-10deg);
-  }
-  20% {
-    transform: rotate(12deg);
-  }
-  30% {
-    transform: rotate(-10deg);
-  }
-  40% {
-    transform: rotate(9deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+/* Veterinary Care Image */
+.connection {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 4 auto;
 }
 
-@media only screen and (max-width: 950px) {
-  body,
-  html {
-    text-align: center;
-    font-size: 16px;
-    line-height: normal;
-  }
-  h1 {
-    font-size: 30px;
+.Profilepic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: cover;
+  border: 6px solid #007bff;
+  border-radius: 12px; /* Slight rounding for a modern look */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.Profilepic:hover {
+  transform: scale(1.03);
+}
+
+.Profilepic {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 25%; /* ✅ Shift focus lower to show face */
+  border: 6px solid #007bff; /* ✅ Clear professional border */
+  border-radius: 12px; /* ✅ Square with rounded corners */
+  padding: 5px; /* ✅ Adds space between image and border */
+  background-color: #ffffff; /* ✅ Clean contrast inside border */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* ✅ Subtle shadow */
+  transition: transform 0.3s ease;
+}
+
+.Profilepic:hover {
+  transform: scale(1.03);
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Profilepic {
+    width: 180px;
+    height: 180px;
   }
   .connect {
     font-size: 20px;
   }
-  .connection {
-    margin-left: 0px;
+  .sayhello {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .navbar-nav {
+    text-align: center;
   }
 }
 
-footer {
-  padding-top: 2%;
-  font-size:small;
-  color: #868e96;
-  text-align: center;
+
+/* Default Bootstrap styles (desktop) are fine */
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    flex-direction: row !important; /* ⬅️ horizontal instead of vertical */
+    justify-content: center;         /* ⬅️ center the items */
+  }
+
+  .navbar-nav {
+    flex-direction: row !important; /* ⬅️ make nav-items horizontal */
+    gap: 10px; /* ⬅️ spacing between nav items */
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 0 5px;
+  }
 }
 
-.hr {
-  border: none;
-  height: 4px;
-  width: 60%;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
-  position: relative;
-  margin: 20px auto;
+
+/* Header & Navbar */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #f4e1d2;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.hr::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  background: #ff7e5f;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -4px;
-  border-radius: 50%;
-}
-
-.social-icons {
+header .container {
   display: flex;
-  gap: 25px; /* Spacing between icons */
-  justify-content: center; /* Centering icons */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  flex-wrap: wrap; /* ✅ Allows wrapping on small screens */
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-left: 0;
   margin-top: 10px;
 }
 
-.social-icons a {
-  font-size: 50px; /* Increase icon size */
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2); /* Slight zoom on hover */
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.fab.fa-whatsapp {
-  font-size: 24px; /* Adjust icon size */
-  color: #25d366; /* WhatsApp green color */
+.nav-links li a {
   text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.fab.fa-whatsapp:hover {
-  color: #128c7e; /* Darker green on hover */
-  transform: scale(1.2); /* Slight zoom effect */
-}
-
-.fab.fa-instagram {
-  color: #e4405f; /* Instagram's official color */
-}
-
-.fas.fa-paper-plane {
-  color: #d44638; /* Red color for mail icon */
-}
-
-marquee {
-  font-size: 20px;
+  color: #5a2d0c;
   font-weight: bold;
-  color: #ffffff;
-  background: linear-gradient(to right, #d67ce2, #feb47b);
-  padding: 10px;
-  border-radius: 5px;
-}
-
-#services {
-  padding: 60px 20px;
-  background-color: #f8f9fa; /* Light gray background */
-}
-
-#services h1,
-#services h3 {
-  color: #343a40; /* Dark gray for a professional look */
-  font-weight: 700;
-}
-
-/* Card Styling */
-.card {
-  background: #fff;
-  border: none;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s;
-}
-
-/* Hover Effect */
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-  background-color: #007bff; /* Change background color on hover */
-  color: white; /* Change text color */
-}
-
-/* Text color change on hover */
-.card:hover h4, 
-.card:hover p {
-  color: white;
-}
-
-.card h4 {
-  color: #007bff; /* Primary blue */
-  font-weight: 600;
   transition: color 0.3s;
 }
 
-.card p {
-  color: #555;
-  font-size: 16px;
-  transition: color 0.3s;
+.nav-links li a:hover {
+  color: #007bff;
 }
 
-.row {
-  justify-content: center;
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #007bff;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.text-center {
-  text-align: center;
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
-/* Responsive Design */
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #5a2d0c;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #d2691e;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #ffffff;
+  border-radius: 2px;
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
-  .card {
-    margin-bottom: 20px;
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: -100%; /* hidden initially */
+    width: 100%;
+    background: #007bff;
+    padding: 1rem;
+    gap: 15px;
+    transition: left 0.3s ease-in-out;
+    z-index: 99;
+  }
+
+  .nav-links.open {
+    left: 0;
   }
 }
 
-.mobile-container {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  background-color: #f8f9fa;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+body {
+  background-color: #c4eec0;
+  color: #333333;
 }
 
-.mobile-container i {
-  margin-right: 10px;
-  font-size: 22px;
-  color: #007bff; /* Blue color */
+header {
+  background-color: 007bff;
+  color: white;
+}
+
+.nav-links li a {
+  color: #FAF3E0;
+}
+
+.nav-links li a:hover {
+  color: #FFD89C;
+}
+
+.card {
+  background-color: white;
+  border-left: 6px solid #3FA796;
+}
+
+button, .sayhello {
+  background-color: #3FA796;
+  color: white;
+}
+
+button:hover, .sayhello:hover {
+  background-color: #2E8BC0;
+}
+
+
+.footer small {
+  color: #555;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.footer a {
+  color: inherit;
+}
+.footer a:hover {
+  color: #3FA796; /* or any hover color you like */
+}
+
+.connect-image {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically if needed */
+  margin: 0 auto;
+}
+
+.connection {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* icon button — small rounded squares */
+.contact-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;               /* छोटा आकार — बदला if needed */
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.521); /* हलका translucent bg for contrast */
+  color: #fff;
+  text-decoration: none;
+  transition: transform .18s ease, background .18s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* icon size inside button */
+.contact-icons a i {
+  font-size: 18px;           /* icon size (small) */
+  line-height: 1;
+}
+
+/* hover micro-interaction */
+.contact-icons a:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.14);
+}
+
+/* optional: brand colors for each icon (subtle) */
+.contact-icons a.phone   { color: #1e90ff; }  /* blue */
+.contact-icons a.whats  { color: #25d366; }  /* whatsapp green */
+.contact-icons a.insta   { color: #e1306c; } /* instagram pink */
+.contact-icons a.email  { color: #ffd166; }  /* warm yellow */
+
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* 🌐 Smaller Toggle Switch - Right Side Below Navbar */
+.language-switch.toggle-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;          /* smaller gap */
+  padding: 10px 10px; /* reduced padding */
+  color: #3e2723;
+  font-size: 0.85rem; /* smaller font for label */
+  margin-top: 5px; /* slight margin from top */
+}
+
+/* Switch container - smaller */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;  /* smaller width */
+  height: 18px; /* smaller height */
+}
+
+/* Slider styling */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4b98e9;
+  transition: 0.4s;
+  border-radius: 18px; /* match height for full round */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;  /* smaller circle */
+  width: 14px;   /* smaller circle */
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Checked state */
+.switch input:checked + .slider {
+  background-color: #1d7ce0;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(18px); /* match new width - height */
+}
+
+/* Hide default checkbox completely */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+/* Language label text color */
+.language-switch #langLabel {
+  color: #4b98e9;  /* dark brown - matches your theme */
+  font-weight: bold; /* optional: make it stand out */
+  font-size: 0.85rem; /* match smaller toggle */
+}
+
+#langLabel{
+  margin-bottom: 5px;
 }
